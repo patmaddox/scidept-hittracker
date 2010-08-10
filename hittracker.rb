@@ -9,7 +9,7 @@ end
 migration "create hits table" do
   database.create_table :hits do
     primary_key :id
-    datetime :created_at
+    timestamp :created_at
     text :content
   end
 end
